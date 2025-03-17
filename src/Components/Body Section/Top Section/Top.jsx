@@ -5,7 +5,7 @@ import './top.css'
 import { BiSearchAlt } from "react-icons/bi";
 import { LuMessageCircleMore } from "react-icons/lu";
 import { IoNotificationsOutline } from "react-icons/io5";
-import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowRightShort, BsSearch } from "react-icons/bs";
 
 
 //Imported Images ========>
@@ -27,7 +27,7 @@ const Top = () => {
 
         <div className="searchBar flex">
            <input type="text"  placeholder='Search Dashboard'/>
-           <BiSearchAlt className='icon'/>
+           <BsSearch className='icon'/>
         </div>
 
         <div className="adminDiv flex">
@@ -73,7 +73,6 @@ const Top = () => {
                 <span className='flex link'>
                   Go to my Orders  <BsArrowRightShort className='icon' />
                 </span>
-
               </div>
 
               <div className="imgDiv">

@@ -181,15 +181,16 @@
       .main {
         position: relative;
         padding: 1rem;
-        height: 200px;
+        height: 260px;
         border-radius: 1rem;
+        flex-direction: row;
         justify-content: space-between;
 
         &::before {
           content: "";
           position: absolute;
           height: 100%;
-          width: 70%;
+          width: 90%;
           background: var(--paleGreen);
           left: 0;
           bottom: 0;
@@ -205,10 +206,13 @@
             color: var(--blackColor);
           }
 
+
+
           .flex {
             gap: 1.5rem;
             font-weight: 500;
             color: var(--blackColor);
+
 
             small {
               font-size: var(--normalFontSize);
@@ -220,7 +224,7 @@
           }
 
           .link {
-            margin-top: 2rem;
+            margin-top:2rem;
             cursor: pointer;
 
             &:hover {
@@ -247,21 +251,12 @@
 }
 
 
-
-
-
-
 // MEDIA QUERIES =============>
 @media (max-width: 768px) {
   .headerSection {
     flex-direction: column;
     text-align: center;
 
-    .title {
-      h1 {
-        color: #528e25 !important;
-      }
-    }
   }
 
   .searchBar {
@@ -280,7 +275,25 @@
   }
   .cardSection {
     flex-direction: column;
-  }
+
+    .leftCard{
+        padding: 4px 8px;
+        
+        .main{
+            height: auto !important;
+            flex-direction: column !important;
+
+            .textDiv{
+                text-align: center !important;
+
+                h1{
+                    margin-right:8rem;   
+                    
+                    
+                  flex{
+                    margin-right: 5rem;
+                  }  
+                    
 
   .rightCard,
   .leftCard {
@@ -302,7 +315,18 @@
     .main {
       &::before {
         width: 100%;
+
+        .textDiv {
+          text-align: center;
+          flex-direction: column;
+        }
       }
     }
   }
+}
+
+}
+}
+}
+}
 }

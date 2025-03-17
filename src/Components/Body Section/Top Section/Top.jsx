@@ -41,8 +41,9 @@ const Top = () => {
 
       </div>
 
-      <div className="cardSection flex">
+      <div className="cardSection flex ">
          <div className="rightCard flex">
+          <div className="overlay"></div>
           <h1>Create and sell extraordinary prodcuts</h1>
           <p>The world's fast growing industry today are natural made products!</p>
           <div className="button flex">

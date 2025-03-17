@@ -36,19 +36,17 @@
         img {
             // max-width: 40px;
             position: relative;
-            width: 36px;
+            width: 50px;
             margin-right: .5rem;
-            background: var(--inputColor);
-            border-radius: 2px;
+            // background: var(--inputColor);
+            // border-radius: 2px;
             padding: 0rem;
             transform: translateX(-10px);
-            // font-size:20px;
         }
         
         h2 {
-            font-size: var(--h2FontSize);
+            font-size: var(--h1FontSize);
             color: var(--primary-color);
-            display: none;
         }
     }
 
@@ -224,9 +222,16 @@
         align-items: flex-start;
         justify-content: flex-start;
 
-    }
+    
 
-   
+    }
+    .logoDiv h2{
+        display: none;
+}
+
+.logoDiv img{
+    margin-left: -10px;
+}
 
 .menuLink{
         font-size:15px;

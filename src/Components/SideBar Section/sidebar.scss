@@ -31,18 +31,24 @@
     .logoDiv {
         padding: 1.5rem 1.5rem 0;
         cursor: pointer;
+    
 
         img {
-            max-width: 20px;
+            // max-width: 40px;
+            position: relative;
+            width: 36px;
             margin-right: .5rem;
             background: var(--inputColor);
             border-radius: 2px;
-            padding: .0rem;
+            padding: 0rem;
+            transform: translateX(-10px);
+            // font-size:20px;
         }
-
+        
         h2 {
             font-size: var(--h2FontSize);
             color: var(--primary-color);
+            display: none;
         }
     }
 

@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+    .hide-mobile{
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .hide-desktop{
+        display: none !important;
+    }
+}
+
 .mainContent{
     width: 82%;
     height: 100%;

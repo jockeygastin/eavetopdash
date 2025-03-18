@@ -22,10 +22,6 @@
     --smallestFontSize: .75rem;
 }
 
-.BarCard{
-    display: none;
-}
-
 
 .listingSection{
     flex-basis: 100%;
@@ -145,6 +141,7 @@
                             .date{
                                 margin-left: 1rem;
                             }
+
                         }
                     }
                 }
@@ -186,11 +183,12 @@
         align-items: flex-start;
       }
 
-      .BarCard{
+      .sideBarCard{
         width: 100% !important;
-        padding: 1rem;
+        padding: 0;
         text-align: center;
         position: relative;
+        margin-top: 5rem;
 
         .icon{
             position: absolute;

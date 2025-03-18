@@ -121,7 +121,7 @@ const Sidebar = () => {
         </ul>
       </div>
 
-      <div className='sideBarCard'>
+      <div className='sideBarCard hide-mobile'>
         <BsQuestionCircle className='icon' />
         <div className='cardContent'>
           <div className='circle1'></div>

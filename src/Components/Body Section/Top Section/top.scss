@@ -91,10 +91,9 @@
     margin-top: 3rem;
     gap: 1rem;
 
-    .rightCard{
-        position: relative;
+    .rightCard {
+      position: relative;
     }
-    
 
     .rightCard {
       position: relative;
@@ -108,7 +107,7 @@
       border-radius: 1rem;
       overflow: hidden;
 
-    .overlay{
+      .overlay {
         position: absolute !important;
         width: 100%;
         top: 0;
@@ -117,8 +116,7 @@
         bottom: 0;
         background: rgba(0, 0, 0, 0.5);
         z-index: 0;
-    
-    }
+      }
 
       .videoDiv {
         position: absolute;
@@ -206,13 +204,10 @@
             color: var(--blackColor);
           }
 
-
-
           .flex {
             gap: 1.5rem;
             font-weight: 500;
             color: var(--blackColor);
-
 
             small {
               font-size: var(--normalFontSize);
@@ -224,7 +219,7 @@
           }
 
           .link {
-            margin-top:2rem;
+            margin-top: 2rem;
             cursor: pointer;
 
             &:hover {
@@ -243,20 +238,17 @@
           img {
             width: 400px;
           }
-         
         }
       }
     }
   }
 }
 
-
 // MEDIA QUERIES =============>
 @media (max-width: 768px) {
   .headerSection {
     flex-direction: column;
     text-align: center;
-
   }
 
   .searchBar {
@@ -273,60 +265,79 @@
   .adminDiv {
     display: none;
   }
+
   .cardSection {
     flex-direction: column;
 
-    .leftCard{
-        padding: 4px 8px;
-        
-        .main{
-            height: auto !important;
-            flex-direction: column !important;
+    .videoDiv video {
+      width: 100%;
+    }
 
-            .textDiv{
-                text-align: center !important;
+    .rightCard {
+      width: 270px !important;
+      h1 {
+        font-size: 20px !important;
+      }
 
-                h1{
-                    margin-right:8rem;   
-                    
-                    
-                  flex{
-                    margin-right: 5rem;
-                  }  
-                    
+      p {
+        font-size: 13px;
+      }
 
-  .rightCard,
-  .leftCard {
-    width: 100%;
-    text-align: center;
-  }
+      .button .btn {
+        font-size: 5px;
+      }
+    }
 
-  .button {
-    flex-direction: column;
-    gap: 10px;
-  }
+    .leftCard {
+      padding: 4px 8px;
 
-  .videoDiv video {
-    width: 100%;
-    border: 10px;
-  }
+      .main {
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 1rem 0rem !important;
 
-  .leftCard {
-    .main {
-      &::before {
-        width: 100%;
+        .imgDiv{
+          img{
+            width: 300px !important;
+          }
+        }
 
         .textDiv {
-          text-align: center;
-          flex-direction: column;
+          text-align: center !important;
+
+          h1 {
+            margin-right: 8rem;
+
+            flex {
+              margin-right: 5rem;
+            }
+
+            .rightCard,
+            .leftCard {
+              width: 100%;
+              text-align: center;
+            }
+
+            .button {
+              flex-direction: column;
+              gap: 10px;
+            }
+
+            .leftCard {
+              .main {
+                &::before {
+                  width: 100%;
+
+                  .textDiv {
+                    text-align: center;
+                    flex-direction: column;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
-}
-
-}
-}
-}
-}
 }

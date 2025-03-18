@@ -5,6 +5,8 @@ import './listing.css'
 import { BsArrowRightShort } from "react-icons/bs";
 import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
+import { BsQuestionCircle } from "react-icons/bs";
+
 
 //Imported Images===========>
   import img from '../../../Assets/r3.png'
@@ -15,8 +17,6 @@ import { AiOutlineHeart } from "react-icons/ai";
   import user2 from '../../../Assets/it.jpg'
   import user3 from '../../../Assets/girl.jpg'
   import user4 from '../../../Assets/karolina.jpg'
-
-
 
 
 const Listing = () => {
@@ -108,9 +108,20 @@ const Listing = () => {
               </small>
              </span>
           </div>
+
+              </div> 
+    </div>
+               <div className='BarCard'>
+                  <BsQuestionCircle className='icon' />
+                  <div className='cardContent'>
+                    <div className='circle1'></div>
+                    <div className='cirecle2'></div>
+                    <h3>Help Center</h3>
+                    <p>Having trouble in eavetop, please contact us from for more questions.</p>
+                    <button className='btn'>Go to help center</button>
+                  </div>
+                </div> 
        </div>
-    </div>
-    </div>
     </div>
 
   )

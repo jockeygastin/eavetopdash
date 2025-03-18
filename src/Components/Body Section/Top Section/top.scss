@@ -274,7 +274,9 @@
     }
 
     .rightCard {
-      width: 270px !important;
+      width: 290px !important;
+      margin-left:-18px !important;
+
       h1 {
         font-size: 20px !important;
       }
@@ -289,7 +291,8 @@
     }
 
     .leftCard {
-      padding: 4px 8px;
+      padding: 4px 8px ! important;
+      margin-left: 30px !important;
 
       .main {
         height: auto !important;

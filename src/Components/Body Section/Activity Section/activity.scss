@@ -94,15 +94,23 @@
 @media (max-width: 768px) {
     .bottom{
         flex-direction: column-reverse;
+
     }
   .activitySection {
 
     flex-direction:row;
-
+    
+    
     .heading{
-        flex-direction: column;
+        flex-direction:row;
         align-items: flex-start;
+        
     }
-  }
+    .btn{
+        border: 1px solid var(--primary-color);
+        margin-left:4px;
+    }
+    
+}
 
 }
